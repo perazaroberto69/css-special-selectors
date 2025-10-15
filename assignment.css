@@ -11,5 +11,45 @@
     font-size: 80px;
 }
 
-/* Add your CSS styles below this line */
 
+
+/* Add your CSS styles below this line */
+.card::before{
+    content:"sale";
+    border: 5px solid red;
+    border-radius:3em;
+    margin:0;
+    background-color: red;
+    color:white
+    
+}
+
+.card p:hover::after {
+    content: " Now 29$";
+    color:red;
+}
+
+.card a {
+    border: 2px solid rgb(236, 97, 46);
+    padding:5%;
+    background-color:rgb(236, 97, 46);
+    color:white;
+    text-decoration:none;
+    border-radius:10%
+}
+
+.card a:hover{
+    border: 2px solid rgb(236, 97, 46);
+    border-radius:10%;
+    padding: 5%;
+    text-decoration: none;
+    background-color:rgb(253, 228, 219);
+    color:rgb(236, 97, 46);
+    
+}
+
+.card a:active {
+    border:red;
+    background-color:red;
+    color:white;
+}
