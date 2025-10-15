@@ -1,0 +1,29 @@
+li:hover{
+    background-color:rgb(25, 0, 255);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+li:active {
+    background-color: lightgreen;
+    font-style: italic;
+}
+
+li::before {
+    content: "😂";
+}
+
+li:hover::after {
+    content: " Vote me twin😭";
+    color: rgb(0, 255, 0);
+    margin-left: 12px;
+}
+
+li:active::after {
+    content:"🙏";
+}
+
+ul{
+    list-style: none;
+}
+
